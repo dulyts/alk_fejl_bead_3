@@ -1,0 +1,18 @@
+<h1>Munkaórák listája</h1>
+<table class="table table-striped">
+    <tbody>
+    <tr>
+        <th>Nap</th>
+        <th>Mettol</th>
+        <th>Meddig</th>
+        <th>Leirás</th>
+        <th class="text-right">Műveletek</th>
+    </tr>
+    {{#each model as |item|}}
+        {{munka-details data=item onDel=(action "deleteMunkaora")}}
+    {{/each}}
+    </tbody>
+</table>
+<div id="modify">
+    {{outlet}}
+</div>

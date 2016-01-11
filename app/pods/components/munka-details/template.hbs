@@ -1,0 +1,21 @@
+    <td>{{data.nap}}</td>
+    <td>{{data.mettol}}</td>
+    <td>{{data.meddig}}</td>
+    <td>{{data.leiras}}</td>
+    <td class="text-right">
+        
+        {{#link-to "munkaora.edit" data.id}}
+            <span class="btn btn-sm btn-info">
+                <span class="glyphicon glyphicon-pencil"></span>
+            </span>
+        {{/link-to}}
+        
+        {{#link-to "comment" data.id}}
+            <span class="btn btn-sm btn-info">
+                <span class="glyphicon glyphicon-list-alt"></span>
+            </span>
+        {{/link-to}}
+        <button class="btn btn-sm btn-danger" {{action "onDel" data.id}}>
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+    </td>

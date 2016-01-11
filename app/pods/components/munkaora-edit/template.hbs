@@ -1,0 +1,55 @@
+<form method="post">
+    <input type="hidden" name="id" value="{{data.id}}">
+    <table class="table table-striped">
+        <tr>
+            <th>Leírás</th>
+            <td>
+                <textarea class="form-control" 
+                   name="leiras" id="leiras" 
+                   placeholder="Írja le, hogy milyen munkát végzett...">{{data.leiras}}</textarea>
+            </td>
+        </tr>
+        <tr>
+            <th>Nap</th>
+            <td>
+                <div id="datetimepicker0" class="input-group date">
+                    <input type="text"class="form-control" name="nap" value="{{data.nap}}">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th"></span>
+                  </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th>Mettol</th>
+            <td>
+                <div id="datetimepicker1" class="input-group clockpicker">
+                    <input type="text" name="mettol" class="form-control" value="{{data.mettol}}">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>   
+            </td>
+        </tr>
+        <tr>
+            <th>Meddig</th>
+            <td>
+                <div id="datetimepicker2" class="input-group clockpicker">
+                    <input type="text" name="meddig" class="form-control" value="{{data.meddig}}">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>   
+            </td>
+        </tr>
+    </table>
+    
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+        <div class="form-group">
+            <button {{action "onSubmit"}} class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+</form>
+{{outlet}}

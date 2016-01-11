@@ -1,0 +1,15 @@
+<h1>Kommentek:</h1>
+<div id="comments" class="row">
+    {{#each model.munka.comments as |comment|}}
+        <div class="col-sm-5">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                {{comment.szoveg}}
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>
+
+{{comment-form munkaId=model.munkaId onSave=(action "newComment")}}
+{{outlet}}
