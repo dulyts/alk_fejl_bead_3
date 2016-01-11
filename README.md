@@ -63,10 +63,10 @@
 	1. Adatmodell
 
 		Munkaora 1 ───> * Komment
-		-nap              -komment szovege  
-		-mettol
-		-meddig
-		-leiras
+		* nap              -komment szovege
+		* mettol
+		* meddig
+		* leiras
 
 
 ## Implementáció
