@@ -91,9 +91,7 @@
  │   └───worktime           munkaóra modell
  └───styles                 stíluslapok
 ```
-	
-## Tesztelés
--
+
 
 ## Felhasználói dokumentáció
 1. A futtatáshoz szükséges hardver legalább egy SSD-t és 1GB-ramot tartalmazó szerver
