@@ -93,23 +93,15 @@
 ```
 	
 ## Tesztelés
-1. Tesztelés bemutatása
-	Az egység teszteket a mocha valamint chai modulok segítségével, míg a funkcionális felületoi teszteket Selenium IDE segítségével valósítjuk meg.
-2. Egszégtesztek
-	Az egység tesztek lényege hogy az adatmodelleket valamint a belső megvalósítások helyességét ellenőrizzük.
-	A tesztek 'npm test' parancsal indíthatóak és a User adatmodell tesztelését valósítja meg a test/create.test.js
-3. Funkcionális felületi tesztek
-	A teszteléshez szükséges fájlok a test/selenium/ mappában találhatóak.
-4. Tesztesetek végigpróbálása
-	- egységtesztek: velhasználók létrehozásának helyes és helytelen lehetőségeit.
-	- funkcionális: bejelentkezés majd új bejegyzés létrehozása és módosítását.
+-
 
 ## Felhasználói dokumentáció
-1. A futtatáshoz szükséges hardver legalább egy Pentium I-es processzorral ellátott linux operációsrendszert futtató számítógép 'npm' csomaggal és interneteléréssel
+1. A futtatáshoz szükséges hardver legalább egy SSD-t és 1GB-ramot tartalmazó szerver
 2. Futtatás
 	- githubról az egész projektet le kell klónozni a helyi könyvtárba ```git clone``` parancsal
 	- az npm install parancso kiadva letöltődnek az alkalmazáshoz tartozó függőségek.
 	- az alkalmazás az nodemon index parancsal indul
+	- az alkalmazáshoz szükséges elindítani a JSONAPI projektet is 
 2. az alkalmazás értelemszerűen használható
 	- regisztráció
 	- bejelentkezés
